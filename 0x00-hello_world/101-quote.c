@@ -1,15 +1,14 @@
 #include <stdio.h>
+#include <unistd.h>
+
 /**
- * main - Entry point
- *
+ * main - prints exactly "and that piece of art is useful"
+ * - Dora Korpar, 2015-10-19",
+ * followed by a new line, to the standard error.
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-const char *string = "and that piece of art is useful" - Dora Korpar, 2015-10-19\n"
-while (string[i] != '\0') {
-putchar(string[i]);
-i++}
-return (0);
+write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+return (1);
 }
