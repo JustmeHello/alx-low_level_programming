@@ -9,7 +9,7 @@
  * Return: (0) Always 0 (Success)
  */
 int main(void) {
-    char letter = 'a'; // starting from 'a'
+    char letter = 'a'; 
 
     while (letter <= 'z') {
         putchar(letter);
