@@ -3,22 +3,23 @@
 /**
  * main - Entry point
  *
- * Description: Printing double-digit numbers with different digits separated by commas and spaces
+ * Description: Print all possible different combinations of two digits
+ * separated by a comma and a space.
  *
  * Return: 0 (Success)
  */
 int main(void)
 {
-    int n, m;
+    int i, j;
 
-    for (n = 0; n <= 9; n++)
+    for (i = 0; i <= 8; i++)
     {
-        for (m = n + 1; m <= 9; m++)
+        for (j = i + 1; j <= 9; j++)
         {
-            putchar('0' + n);
-            putchar('0' + m);
+            putchar(i + '0');
+            putchar(j + '0');
 
-            if (n < 8 || m < 9)
+            if (i != 8 || j != 9)
             {
                 putchar(',');
                 putchar(' ');
