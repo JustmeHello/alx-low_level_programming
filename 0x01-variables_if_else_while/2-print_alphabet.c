@@ -4,7 +4,7 @@
 *main : print alphabets a to z
 *
 */
-int main() {
+int main(void) {
     char letter = 'a'; /*starting from a*/
 
         while (letter <= 'z') {
