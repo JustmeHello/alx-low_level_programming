@@ -6,10 +6,10 @@
  * Description: This is the main function of the program. It prints the lowercase
  * alphabet from 'a' to 'z' followed by a newline character.
  *
- * Return: Always 0 (Success)
+ * Return: (0) Always 0 (Success)
  */
 int main(void) {
-    char letter = 'a'; 
+    char letter = 'a'; // starting from 'a'
 
     while (letter <= 'z') {
         putchar(letter);
@@ -18,5 +18,5 @@ int main(void) {
 
     putchar('\n');
 
-    return 0;
+    return (0);
 }
