@@ -4,7 +4,7 @@
 *main - entry point
 *description : print alphabets backwards
 *return 0 (success)
-/*
+*/
 int main(void)
 {
   char letter;
