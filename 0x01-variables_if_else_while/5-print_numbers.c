@@ -7,14 +7,14 @@
  */
 int main(void)
 {
-    int a;
+	int a;
 
-    for (a = 0; a < 10; a++)
-    {
-        printf("%d", a);
-    }
+	for (a = 0; a < 10; a++)
+	{
+		printf("%d", a);
+	}
 
-    printf("\n"); /* Add a newline character after printing all digits */
+	printf("\n"); /* Add a newline character after printing all digits */
 
-    return (0);
+	return (0);
 }
