@@ -1,18 +1,16 @@
 #include <stdio.h>
-/**
-*prints alphabet letters 
-* 
-*desc: The function uses loop to operate
-*Return: no return
-*/
-int main (void)
-{
-char = letter;
 
-for (letter = 'a'; letter <= 'z'; letter++)
-putchar("letter");
-putchar('\n');
+int main() {
+    char letter = 'a'; // Start with the letter 'a'
 
-return(0);
+    // Loop through the alphabet and print each letter
+    while (letter <= 'z') {
+        putchar(letter);
+        letter++;
+    }
+
+    // Print a newline character to move to the next line
+    putchar('\n');
+
+    return 0;
 }
-
