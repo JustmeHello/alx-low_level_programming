@@ -14,7 +14,7 @@ int main(void)
         printf("%d", a);
     }
 
-    printf("\n"); // Add a newline character after printing all digits
+    printf("\n"); /* Add a newline character after printing all digits */
 
     return (0);
 }
