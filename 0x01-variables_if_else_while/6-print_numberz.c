@@ -2,14 +2,14 @@
 
 int main(void) 
 {
-	int n;
+    int n;
 
-	for (n = 0; n < 10; n++) 
-	{
-		putchar('0' + n);
-	}
+    for (n = 0; n < 10; n++) 
+    {
+        putchar('0' + n);
+    }
 
-	putchar('\n');
+    putchar('\n');
 
-	return 0;
+    return (0); 
 }
