@@ -9,18 +9,18 @@
  */
 int main(void)
 {
-    int num;
+	int num;
 
-    for (num = 0; num < 10; num++)
-    {
-        putchar('0' + num);
-    }
+	for (num = 0; num < 10; num++)
+	{
+		putchar('0' + num);
+	}
 
-    for (num = 'a'; num <= 'f'; num++)
-    {
-        putchar(num);
-    }
+	for (num = 'a'; num <= 'f'; num++)
+	{
+		putchar(num);
+	}
 
-    putchar('\n');
-    return (0);
+	putchar('\n');
+	return (0);
 }
