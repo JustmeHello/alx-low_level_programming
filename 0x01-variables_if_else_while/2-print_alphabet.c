@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    char letter = 'a'; /
+    char letter = 'a'; /*starting from a*/
 
         while (letter <= 'z') {
         putchar(letter);
