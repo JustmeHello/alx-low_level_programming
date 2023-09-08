@@ -3,39 +3,32 @@
 /**
  * main - Entry point
  *
- * Description: Print all possible different combinations of three digits
- * separated by a comma and a space.
+ * Description: Print all possible combinations of two two-digit numbers
  *
  * Return: 0 (Success)
  */
 int main(void)
 {
-	int i, j, k, l;
+    int i, j;
 
-	for (i = 0; i <= 9; i++)
-	{
-		for (j = 0; j <= 9; j++)
-			{putchar(' ');}
-		{
-			for (k = 0; k <= 9; k++)
-			{
-        for (l = 0; l <= 9; l++)
+    for (i = 0; i <= 99; i++)
+    {
+        for (j = i + 1; j <= 99; j++)
         {
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(k + '0');
-        putchar(l + '0');
+            putchar((i / 10) + '0'); // Print the tens digit of the first number
+            putchar((i % 10) + '0'); // Print the ones digit of the first number
+            putchar(' '); // Print a space
+            putchar((j / 10) + '0'); // Print the tens digit of the second number
+            putchar((j % 10) + '0'); // Print the ones digit of the second number
 
-				if (i != 9 || j != 9 || k != 9 || l!= 9)
-				{
-					putchar(',');
-					putchar(' ');
+            if (i != 98 || j != 99)
+            {
+                putchar(','); // Print a comma
+                putchar(' '); // Print a space
+            }
         }
-				}
-			}
-		}
-	}
+    }
 
-	putchar('\n');
-	return (0);
+    putchar('\n'); // Print a newline character
+    return (0);
 }
