@@ -7,17 +7,17 @@
 
 int main(void)
 {
-    char l; // Declare the variable 'l'
+    char l; 
 
-    for (l = 'a'; l <= 'z'; l++) // Use ';' to separate initialization, condition, and increment
+    for (l = 'a'; l <= 'z'; l++) 
     {
-        if (l != 'e' && l != 'q') // Use '!=' to compare, not '|'
+        if (l != 'e' && l != 'q') 
         {
             putchar(l);
         }
     }
 
-    putchar('\n'); // Use '\n' for a newline character
+    putchar('\n'); 
 
     return 0;
 }
