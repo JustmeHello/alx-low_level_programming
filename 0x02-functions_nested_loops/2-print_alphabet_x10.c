@@ -9,17 +9,15 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
-{
-	char letter = 'a';
+int main(void) {
+    int rows = 10; 
 
-	while (letter <= 'z')
-	{
-		putchar(letter);
-		letter++;
-	}
+    for (int i = 0; i < rows; i++) {
+        for (char letter = 'a'; letter <= 'z'; letter++) {
+            putchar(letter);
+        }
+        putchar('\n');
+    }
 
-	putchar('\n');
-
-	return (0);
+    return 0;
 }
