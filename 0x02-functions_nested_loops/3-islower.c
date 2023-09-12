@@ -9,21 +9,17 @@
  *
  * Return: Always 0 (Success)
  */
-int _islower(int c) {
-    if (islower(c))
-        return 1;
-    else
-        return 0;
-}
-
 int main(void) {
-    char ch = 'a';  // You can change 'a' to any character you want to check
-    int result = _islower(ch);
+    char c;
 
-    if (result == 1)
+    
+    scanf("%c", &c);
+
+    if (islower(c)) {
         printf("1\n");
-    else
+    } else {
         printf("0\n");
+    }
 
     return 0;
 }
