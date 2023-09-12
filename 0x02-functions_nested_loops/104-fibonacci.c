@@ -2,7 +2,7 @@
 
 int main(void) {
     int i;
-    unsigned int a = 1, b = 1, next;
+    unsigned int a = 1, b = 2, next;
 
     printf("%u, %u", a, b);
 
