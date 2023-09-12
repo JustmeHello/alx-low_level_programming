@@ -1,24 +1,28 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - Check the code
- *
- * Return: Always 0.
- */
-int main(void) {
-    int rows = 10;
-    int cols = 10;
+*times_table - prints the 9 times table
+*
+*Return: returns nothing
+*/
+void times_table(void)
+{
+int digit, mult, result;
+for (digit = 0; digit <= 9; digit++)
+{
+_putchar('0');
 
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            int result = i * j;
-            printf("%2d", result);
-            if (j < cols - 1) {
-                printf(", ");
-            }
-        }
-        printf("$\n");
-    }
+for (mult = 1; mult <= 9; mult++)
+{
+_putchar(',');
+_putchar(' ');
+result = digit * mult;
+if (result <= 9)
+_putchar(' ');
+else
+_putchar((result / 10) + '0');
 
-    return 0;
+_putchar((result % 10) + '0');
+}
+_putchar('\n');
+}
 }
