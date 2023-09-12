@@ -1,25 +1,13 @@
-#include <stdio.h>
-#include <ctype.h>
+#include "main.h"
 /**
- * main - Entry point
- *
- * Description: This is the main function of the program.
- * It prints the lowercase alphabet from 'a' to 'z'
- * followed by a newline character.
- *
- * Return: Always 0 (Success)
- */
-int main(void) {
-    char c;
+*_islower - controls if a character is in lowercase
+*@c: character to be verified
+*Return: return 0 or 1
+*/
+int _islower(int c)
+{
+if (c >= 'a' && c <= 'z')
+return (1);
 
-    
-    scanf("%c", &c);
-
-    if (islower(c)) {
-        printf("1\n");
-    } else {
-        printf("0\n");
-    }
-
-    return 0;
+return (0);
 }
