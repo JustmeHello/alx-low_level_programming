@@ -1,14 +1,16 @@
 #include <stdio.h>
 
 int main(void) {
-    int i;
-    unsigned int a = 1, b = 2, next;
+    unsigned long long a = 1, b = 2;
+    printf("%llu, %llu, ", a, b);
 
-    printf("%u, %u", a, b);
+    for (int i = 3; i <= 98; i++) {
+        unsigned long long next = a + b;
+        printf("%llu", next);
 
-    for (i = 3; i <= 98; i++) {
-        next = a + b;
-        printf(", %u", next);
+        if (i < 98) {
+            printf(", ");
+        }
 
         a = b;
         b = next;
@@ -17,4 +19,3 @@ int main(void) {
     printf("\n");
     return 0;
 }
-
