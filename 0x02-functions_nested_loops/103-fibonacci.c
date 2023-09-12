@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(void) {
-    long long int fib[3];
-    long long int sum = 0;
+    long fib[3];
+    long sum = 0;
 
     fib[0] = 1;
     fib[1] = 1;
@@ -17,7 +17,7 @@ int main(void) {
         fib[1] = fib[2];
     }
 
-    printf("%lld\n", sum);
+    printf("%ld\n", sum);
 
     return 0;
 }
