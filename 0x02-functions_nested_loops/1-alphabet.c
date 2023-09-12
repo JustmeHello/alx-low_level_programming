@@ -3,9 +3,9 @@
 /**
  * main - Entry point
  *
- * Description: This is the main function of the program.
- * It prints the lowercase alphabet from 'a' to 'z'
- * followed by a newline character.
+ * Description: It prints the lowercase alphabet from 'a' to 'z'
+ * 
+ * 
  *
  * Return: Always 0 (Success)
  */
