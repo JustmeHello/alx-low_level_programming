@@ -10,14 +10,14 @@
  * Return: Always 0 (Success)
  */
 int main(void) {
-    int rows = 10; 
+int rows = 10; 
 
-    for (int i = 0; i < rows; i++) {
-        for (char letter = 'a'; letter <= 'z'; letter++) {
-            putchar(letter);
-        }
-        putchar('\n');
-    }
+for (int i = 0; i < rows; i++) {
+for (char letter = 'a'; letter <= 'z'; letter++) {
+putchar(letter);
+}
+putchar('\n');
+}
 
-    return 0;
+return 0;
 }
