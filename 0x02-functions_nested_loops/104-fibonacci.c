@@ -1,20 +1,21 @@
 #include <stdio.h>
 
 int main(void) {
-    int i;
-    unsigned int a = 1, b = 1, next;
-
-    printf("%u, %u", a, b);
-
-    for (i = 3; i <= 98; i++) {
+    unsigned long a = 1, b = 2, next;
+    
+    printf("%lu, %lu, ", a, b);
+    
+    for (int i = 3; i <= 98; i++) {
         next = a + b;
-        printf(", %u", next);
-
+        printf("%lu", next);
+        if (i < 98) {
+            printf(", ");
+        } else {
+            printf("\n");
+        }
         a = b;
         b = next;
     }
-
-    printf("\n");
+    
     return 0;
 }
-
