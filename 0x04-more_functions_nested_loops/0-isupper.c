@@ -10,8 +10,8 @@ int main(void)
 char a;
 scanf("%c", &a);
 if (isupper(a))
-printf("1");
+printf("1\n");
 else
-printf('0");
+printf('0\n");
 return 0;
 }
