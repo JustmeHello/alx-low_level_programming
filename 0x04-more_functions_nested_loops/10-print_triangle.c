@@ -1,35 +1,28 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * Description: print right aligned triangle with #
- *
- * Return: Always 0 (Success)
- */
-int main()
+*print_triangle - prints a triangle
+*@size:size parameter of triangle
+*Return:returns nothing
+*/
+void print_triangle(int size)
 {
-    int size, i, n;
-    scanf("%d", &n);
+int inc1, inc2;
 
-    if (n <= 0)
-    {
-        putchar('\n');
-        return 0;
-    }
+if (size > 0)
+{
+for (inc1 = 1; inc1 <= size; inc1++)
+{
+for ((inc2 = size - inc1); inc2 > 0; inc2--)
+_putchar(' ');
 
-    for (size = n; size >= 0; size--)
-    {
-        for (i = 1; i <= size; i++)
-        {
-            putchar(' ');
-        }
+for (inc2 = 0; inc2 < inc1; inc2++)
+_putchar('#');
 
-        for (i = 0; i < n - size; i++)
-        {
-            putchar('#');
-        }
+if (inc1 == size)
+continue;
 
-        putchar('\n');
-    }
-    return 0;
+_putchar('\n');
+}
+}
+_putchar('\n');
 }
