@@ -1,28 +1,14 @@
-#include <stdio.h>
-#include <ctype.h>
+#include "main.h"
 /**
- * main - Entry point
- *
- * Description: turn num to _ 
- *
- * Return: Always 0 (Success)
- */
-#include <stdio.h>
-
-int main(void)
+*print_line - prints a straight line
+*@n:parameter
+*Return:returns nothing
+*/
+void print_line(int n)
 {
-    int i;
-    
-    scanf("%d", &i);
-
-    while (i > 0)
-    {
-        putchar('_');
-        i--;
-    }
-
-    putchar('\n');
-    
-    return 0;
+while (n-- > 0)
+{
+_putchar('_');
 }
-
+_putchar('\n');
+}
