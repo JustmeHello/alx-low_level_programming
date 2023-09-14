@@ -1,28 +1,19 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * Description: print 0 to 9 using only putchar twice skip 2,4
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+*print_most_numbers - prints numbers except 2 and 4
+*
+*Return: returns nothing
+*/
+void print_most_numbers(void)
 {
-    int i = 0;
-
-    while (i <= 9)
-    {
-        if (i == 2 || i == 4)
-        {
-            i = i + 1;
-            continue;
-        }
-
-        putchar(i + '0');
-        i = i + 1;
-    }
-
-    putchar('\n');
-
-    return 0;
+int number;
+for (number = 48; number < 58; number++)
+{
+if ((number == 50) || (number == 52))
+{
+continue;
+}
+_putchar(number);
+}
+_putchar(10);
 }
