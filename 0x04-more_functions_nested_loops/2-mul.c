@@ -1,19 +1,12 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * Description: Muliply two numbers
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{       
-int a;  
-int b;
-int mul;
+*mul - function that multipliestwo numbers
+*@a: first number
+*@b: second number
+*Return: returns result
+*/
 
-scanf("%d %d", &a, &b);
-mul = a * b;
-printf("%d\n",mul);
-return 0;
+int mul(int a, int b)
+{
+return (a * b);
 }
