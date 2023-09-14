@@ -1,23 +1,24 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * Description: print 0 to 14, 10 times
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+*more_numbers - prints numbers to 14
+*
+*Return: returns nothing
+*/
+void more_numbers(void)
 {
-    int i, j;
+int number1, number2;
 
-    for (j = 0; j < 10; j++)
-    {
-        for (i = 0; i <= 14; i++)
-        {
-            if (i > 9)
-                putchar(i / 10 + '0');
-            putchar(i % 10 + '0');
-        }
-        putchar('\n');
-    }
+for (number1 = 0; number1 < 10; number1++)
+{
+for (number2 = 0; number2 <= 14; number2++)
+
+{
+if (number2 > 9)
+{
+_putchar((number2 / 10) + '0');
+}
+_putchar((number2 % 10) + '0');
+}
+_putchar(10);
+}
 }
