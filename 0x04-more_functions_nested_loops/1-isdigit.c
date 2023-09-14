@@ -1,20 +1,14 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * Description: Checks if a character is a digit.
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+*_isdigit - function that verifies if a  character is a digit or not
+*@c: tested character
+*Return: returns 1 if it is uppercase , 0 if not
+*/
+
+int _isdigit(int c)
 {
-    char c;
-    scanf(" %c", &c);
+if ((c >= 48) && (c <= 57))
+return (1);
 
-    if (isdigit(c))
-        printf("1\n");
-    else
-        printf("0\n");
-
-    return 0;
+return (0);
 }
