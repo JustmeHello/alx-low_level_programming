@@ -7,9 +7,9 @@
 
 int main(void) 
 {
-char a;
-scanf("%c", &a);
-if (isupper(a))
+char c;
+scanf("%c", &c);
+if (isupper(c))
 printf("1\n");
 else
 printf("0\n");
