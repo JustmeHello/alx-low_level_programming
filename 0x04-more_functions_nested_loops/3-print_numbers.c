@@ -1,22 +1,16 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * Description: print 0 to 9 using only putchar twice
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+*print_numbers - function that print all numbers from
+*0 to 9
+*
+*Return: returns nothing
+*/
+void print_numbers(void)
 {
-    int i = 0;
-
-    while (i <= 9)
-    {
-        putchar(i + '0');
-        i = i + 1;
-    }
-
-    putchar('\n');
-
-    return 0;
+int number = 48;
+for (number = 48; number < 58; number++)
+{
+_putchar(number);
+}
+_putchar(10);
 }
