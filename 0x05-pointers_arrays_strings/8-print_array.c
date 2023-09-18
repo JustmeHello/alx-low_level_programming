@@ -8,11 +8,11 @@ void print_array(int *a, int n)
         return;
     }
 
-    printf("%d", a[0]); // Print the first element
+    printf("%d", a[0]); 
 
     for (int i = 1; i < n; i++)
     {
-        printf(", %d", a[i]); // Print the remaining elements with a comma and space
+        printf(", %d", a[i]); 
     }
 
     printf("\n"); // Print a new line at the end
