@@ -2,7 +2,7 @@
 
 void print_array(int *a, int n)
 {
-    int i; // Declare the variable 'i' here
+    int i; 
 
     if (n <= 0) {
         printf("\n");
