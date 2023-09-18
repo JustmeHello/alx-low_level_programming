@@ -24,7 +24,7 @@ int _atoi(char *s)
         {
             digit = *s - '0';
 
-            // Check for integer overflow
+            
             if (result > (INT_MAX - digit) / 10)
             {
                 if (sign == 1)
@@ -35,7 +35,7 @@ int _atoi(char *s)
 
             result = result * 10 + digit;
         }
-        else if (result != 0) // Break on encountering non-digit characters
+        else if (result != 0) 
         {
             break;
         }
