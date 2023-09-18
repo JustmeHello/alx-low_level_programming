@@ -16,7 +16,7 @@ int _atoi(char *s)
     if (s == NULL)
         return 0;
 
-    // Handle signs
+   
     while (*s == '-' || *s == '+')
     {
         if (*s == '-')
