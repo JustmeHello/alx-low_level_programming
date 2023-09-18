@@ -3,12 +3,10 @@
  *
  *reset int to 98
  *
- *return always 0 : (success)
+ * Description: This function takes a pointer to an integer as a parameter
+ * and updates the value at that memory location to 98.
  */
 void reset_to_98(int *n)
 {
-int n;
 *n = 98;
-*n = &n;
-return 0;
 }
