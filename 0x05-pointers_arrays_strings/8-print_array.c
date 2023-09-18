@@ -1,18 +1,19 @@
-#include <stdio.h>
+#include "main.h"
 
 void print_array(int *a, int n)
 {
+    int i; // Declare the variable 'i' here
+
     if (n <= 0) {
         printf("\n");
         return;
     }
 
-    printf("%d", a[0]); 
+    printf("%d", a[0]); // Print the first element
 
-    int i; 
     for (i = 1; i < n; i++) {
-        printf(", %d", a[i]);
+        printf(", %d", a[i]); // Print the remaining elements with a comma and space
     }
 
-    printf("\n"); 
+    printf("\n"); // Print a new line at the end
 }
