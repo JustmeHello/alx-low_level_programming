@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.h" 
 
 /**
  *_strncat - concatenate two strings but add inputted number of bytes
@@ -11,13 +11,13 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 
-	int index = 0, dest_len = 0;
+	int i;
 
-	while (dest[index++])
-		dest_len++;
+	for(i=0; i < n && src[i] != '/0'; i++)
+		dest[i] = src[i];
 
-	for (index = 0; src[index] && index < n; index++)
-		dest[dest_len++] = src[index];
+	for (; i < n ; i++)
+		dest[i] = '/0';
 
 	return (dest);
 
