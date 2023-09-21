@@ -9,7 +9,7 @@ char *leet(char *str)
         for (int j = 0; leetReplace[j]; j++) {
             if (str[i] == leetReplace[j]) {
                 str[i] = leetWith[j];
-                break;  // Exit the inner loop once a replacement is made
+                break;  
             }
         }
     }
