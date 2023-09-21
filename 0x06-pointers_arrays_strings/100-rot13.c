@@ -8,24 +8,24 @@
  */
 char *rot13(char *str)
 {
-    int index1, index2;
-    char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    char rot13key[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i, j;
+	char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot13key[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-    for (index1 = 0; str[index1]; index1++)
-    {
-        if (str[index1] != ' ')
-        {
-            for (index2 = 0; alphabet[index2]; index2++)
-            {
-                if (str[index1] == alphabet[index2])
-                {
-                    str[index1] = rot13key[index2];
-                    break;
-                }
-            }
-        }
-    }
+	for (i = 0; str[i]; i++)
+	{
+		if (str[i] != ' ')
+		{
+			for (j = 0; alphabet[j]; j++)
+			{
+				if (str[i] == alphabet[j])
+				{
+					str[i] = rot13key[j];
+					break;
+				}
+			}
+		}
+	}
 
-    return (str);
+	return (str);
 }
