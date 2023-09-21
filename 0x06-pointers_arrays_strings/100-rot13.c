@@ -6,26 +6,31 @@
  *
  * Return: Returns the encoded string.
  */
-char *rot13(char *str)
+char *rot13(const char *src)
 {
-	int i, j;
-	char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char rot13key[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-
-	for (i = 0; str[i]; i++)
-	{
-		if (str[i] != ' ')
-		{
-			for (j = 0; alphabet[j]; j++)
-			{
-				if (str[i] == alphabet[j])
-				{
-					str[i] = rot13key[j];
-					break;
-				}
-			}
-		}
-	}
-
-	return (str);
+    if(src == NULL){
+      return NULL;
+    }
+  
+    char* result = malloc(strlen(src));
+    
+    if(result != NULL){
+      strcpy(result, src);
+      char* current_char = result;
+      
+      while(*current_char != '\0'){
+        
+        if((*current_char >= 97 && *current_char <= 122) || (*current_char >= 65 && *current_char <= 90)){
+          if(*current_char > 109 || (*current_char > 77 && *current_char < 91)){
+            
+            *current_char -= 13;
+          }else{
+            
+            *current_char += 13;
+          }
+        }
+        current_char++;
+      }
+    }
+    return result;
 }
