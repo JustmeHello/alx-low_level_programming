@@ -8,10 +8,6 @@
 
 void print_number(int n)
 {
-	int putchar(char c)
-{
-    return write(1, &c, 1);
-}
 	unsigned int num = n;
 
 	if (n < 0)
