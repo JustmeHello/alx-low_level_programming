@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h> 
+#include <unistd.h>
 
 /**
  * print_number - Prints out any integer number
