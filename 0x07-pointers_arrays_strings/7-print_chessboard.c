@@ -18,3 +18,8 @@ _putchar(a[row][column]);
 _putchar('\n');
 }
 }
+for (column = 0; column < 8; column++)
+_putchar(a[row][column]);
+_putchar('\n');
+}
+}
