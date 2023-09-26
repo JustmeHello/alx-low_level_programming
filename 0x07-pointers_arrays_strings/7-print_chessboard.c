@@ -1,25 +1,25 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
-* print_chessboard - print chessboard given set 2D array
-* @a: 2D array
-*/
+ * print_chessboard - prints chessboard
+ * @a: pointer
+ *
+ *
+ * Return: 0
+ */
 
 void print_chessboard(char (*a)[8])
 {
+	int i, j;
+	int aLen = sizeof(*a) / sizeof(*a[0]);
 
-int row;
-int column;
-
-for (row = 0; row < 8; row++)
-{
-for (column = 0; column < 8; column++)
-_putchar(a[row][column]);
-_putchar('\n');
-}
-}
-for (column = 0; column < 8; column++)
-_putchar(a[row][column]);
-_putchar('\n');
-}
+	for (i = 0; i < aLen; i++)
+	{
+		for (j = 0; j < aLen; j++)
+		{
+			_putchar(a[i][j]);
+		}
+		_putchar('\n');
+	}
 }
