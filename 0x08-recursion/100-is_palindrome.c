@@ -13,12 +13,12 @@ int is_palindrome_recursive(char *s, int start, int end)
 {
 	if (start >= end)
 	{
-		return (1); /* Base case: If start is greater than or equal to end, it's a palindrome */
+		return (1);
 	}
 
 	if (s[start] == s[end])
 	{
-		return (is_palindrome_recursive(s, start + 1, end - 1)); /* Recursively check the remaining substring */
+		return (is_palindrome_recursive(s, start + 1, end - 1));
 	}
 
 	return (0); /* If characters don't match, it's not a palindrome */
