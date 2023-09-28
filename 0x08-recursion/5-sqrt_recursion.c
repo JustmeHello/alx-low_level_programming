@@ -9,10 +9,13 @@
 int _sqrt_recursion(int n)
 {
 	int guess = 1;
-
-	if (guess * guess == n)
+        if (n < 0)
+		return (-1);
+	else if (n == 0 || n == 1)
+		return (n);
+	else if (guess * guess == n)
 		return (guess);
-	if (guess * guess > n)
+	else if (guess * guess > n)
 		return (-1);
 
 	guess++;  /* Increment the guess for the next recursion */
