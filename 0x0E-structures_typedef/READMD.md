@@ -42,3 +42,4 @@ Return NULL if the function fails
 Write a function that frees dogs.
 
 Prototype: void free_dog(dog_t *d);
+.
