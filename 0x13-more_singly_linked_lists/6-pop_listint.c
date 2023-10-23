@@ -1,5 +1,6 @@
 #include "lists.h"
-
+<stdlib.h>
+ 
 /**
  * pop_listint - deletes the head node of a linked list
  * @head: pointer to the first element in the linked list
